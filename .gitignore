@@ -1,0 +1,11 @@
+# dependencies
+app/node_modules
+
+# production
+app/dist
+
+# env
+app/.env
+
+# misc
+.DS_Store

@@ -1,0 +1,190 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #111827;
+  background-color: #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 0 16px 48px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+label {
+  font-size: 12px;
+  color: #6b7280;
+  display: grid;
+  gap: 6px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button.ghost {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+button.link {
+  background: transparent;
+  color: #2563eb;
+  padding: 0;
+}
+
+button.danger {
+  background: #ef4444;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.row.gap {
+  gap: 8px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.filters button {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.filters button.active {
+  background: #111827;
+  color: #fff;
+}
+
+.list {
+  display: grid;
+  gap: 12px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.todo.done {
+  opacity: 0.7;
+}
+
+.todo-main {
+  flex: 1;
+}
+
+.todo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.todo-title span {
+  text-decoration: none;
+}
+
+.todo.done .todo-title span {
+  text-decoration: line-through;
+}
+
+.todo-desc {
+  margin: 8px 0 0;
+  color: #4b5563;
+}
+
+.todo-meta {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.todo-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.muted {
+  color: #6b7280;
+}
